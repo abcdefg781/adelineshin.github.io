@@ -1,0 +1,14 @@
+name: "Site YML"
+output_dir: "."
+navbar:
+  title: "Adeline Shin"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<adelineshin2015@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/<abcdefg781>/
+output:
+  html_document:
+    theme: cosmo
