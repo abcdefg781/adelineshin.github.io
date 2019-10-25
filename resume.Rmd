@@ -7,3 +7,4 @@ output:
     theme: cosmo
 ---
 
+<img src="./files/adeline_shin_resume.pdf" alt="some text">
