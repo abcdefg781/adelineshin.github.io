@@ -2,12 +2,11 @@
 title: ""
 output: 
   html_document:
-    toc: true
-    toc_float: true
     theme: cosmo
 ---
 
-<img src="./files/DSC_0082.jpg" alt="centered image">
+<br>
+<img src="./files/DSC_0082.jpg" alt="centered image" style="border:5px solid">
 
 My name is Adeline Shin and I am a first year M.S. Biostatistics student at Columbia Mailman School of Public Health. I graduated in May from Carnegie Mellon University with a B.S. in Chemical Engineering and Biomedical Engineering, as well as a minor in Drama.
 
