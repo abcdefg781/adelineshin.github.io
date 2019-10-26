@@ -5,10 +5,9 @@ output:
     theme: cosmo
 ---
 
-<br>
-<center>
+<br> <center>
 <img src="./files/DSC_0082.jpg" style="border:5px solid" width="600" height="auto" alt="centered image">
-</center>
+</center> <br>
 
 My name is Adeline Shin and I am a first year M.S. Biostatistics student at Columbia Mailman School of Public Health. I graduated in May from Carnegie Mellon University with a B.S. in Chemical Engineering and Biomedical Engineering, as well as a minor in Drama.
 
