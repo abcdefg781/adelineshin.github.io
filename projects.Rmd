@@ -8,7 +8,7 @@ output:
 ---
 
 # Medtronic Scoliosis Simulator
-![](files/IMG_5405.jpg)
+<img src="./files/IMG_5405.jpg" height="400" height="auto" alt="centered image">
 
 During my senior year of college, I worked on a Biomedical Engineering capstone project with Medtronic. My team and I created a scoliosis simulator that modeled Adolescent Idiopathic Scoliosis (AIS) and allowed Medtronic engineers to test new surgical instruments as well as surgeons to try out surgical techniques. 
 
@@ -18,6 +18,6 @@ To create the model, our team went through iterations of prototypes and material
 
 Ultimately, our model can help to improve surgical outcomes for AIS by allowing for testing of new techniques and tools before performing surgery on patients for the first time. The video below demonstrates our engineering process as well as the prototype in action.
 
-<iframe width="auto" height="315" src="https://www.youtube.com/embed/1rs4q47CEg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/1rs4q47CEg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # ChocLine Printer
