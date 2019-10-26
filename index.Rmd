@@ -6,7 +6,7 @@ output:
 ---
 
 <br>
-<img src="./files/DSC_0082.jpg" alt="centered image" style="border:5px solid">
+<img src="./files/DSC_0082.jpg" alt="centered image" style="border:5px solid" width="600" height="auto">
 
 My name is Adeline Shin and I am a first year M.S. Biostatistics student at Columbia Mailman School of Public Health. I graduated in May from Carnegie Mellon University with a B.S. in Chemical Engineering and Biomedical Engineering, as well as a minor in Drama.
 
