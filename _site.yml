@@ -10,7 +10,7 @@ navbar:
     - text: "Projects"
       href: projects.html
     - text: "Interactive Graphs"
-      href: dashboard.html
+      href: website_dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<adelineshin2015@gmail.com>
     - icon: fa-github fa-lg
