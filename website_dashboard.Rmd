@@ -55,7 +55,7 @@ order_data = as.data.frame(table(pull(instacart_data, order_hour_of_day))) %>%
 order_ggplot = 
   order_data %>% 
     ggplot(aes(x = hour, y = freq)) +
-    geom_point() +
+    geom_point(colour = "red", size = 1.5) +
     labs(
       title = "Number of Orders Placed per Hour of Day",
       x = "Hour of Day",
@@ -68,11 +68,23 @@ ggplotly(order_ggplot)
 ### Chart C
 
 ```{r}
-aisle_dept_data =
+dept_data =
   instacart_data %>% 
-    ggplot(aes(x = aisle_id, y = department_id)) +
-    geom_point()
+  select(order_id, department) %>% 
+  group_by(order_id) %>% 
+  count(department) %>% 
+  filter(department != "missing")
+  
+dept_ggplot =
+  dept_data %>% 
+  ggplot(aes(x = department, y = n)) +
+  geom_boxplot() +
+  labs(
+    title = "Number of Items Ordered in Each Department Per Order",
+    x = "Department",
+    y = "Number of Items Ordered in an Order"
+  )
 
-ggplotly(aisle_dept_data)
+ggplotly(dept_ggplot)
 ```
 
