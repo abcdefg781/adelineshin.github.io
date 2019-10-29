@@ -9,6 +9,8 @@ navbar:
       href: resume.html
     - text: "Projects"
       href: projects.html
+    - text: "Interactive Graphs"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<adelineshin2015@gmail.com>
     - icon: fa-github fa-lg
