@@ -83,7 +83,8 @@ dept_ggplot =
     title = "Number of Items Ordered in Each Department Per Order",
     x = "Department",
     y = "Number of Items Ordered in an Order"
-  )
+  ) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 ggplotly(dept_ggplot)
 ```
