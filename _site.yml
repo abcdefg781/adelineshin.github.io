@@ -11,6 +11,8 @@ navbar:
       href: projects.html
     - text: "Interactive Graphs"
       href: website_dashboard.html
+    - text: "LinkedIn"
+      href: https://www.linkedin.com/in/adeline-shin-840324121/
     - icon: fa-envelope fa-lg
       href: mailto:<adelineshin2015@gmail.com>
     - icon: fa-github fa-lg
