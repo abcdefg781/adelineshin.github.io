@@ -4,5 +4,6 @@ output:
   html_document:
     theme: cosmo
 ---
+A copy can be downloaded [here](./files/adeline_shin_resume.pdf)
 
 <img src="./files/adeline_shin_resume.jpg" alt="some text">
