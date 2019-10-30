@@ -16,7 +16,7 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:<adelineshin2015@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<abcdefg781>/
+      href: http://github.com/abcdefg781/
 output:
   html_document:
     theme: cosmo
