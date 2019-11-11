@@ -9,8 +9,6 @@ navbar:
       href: resume.html
     - text: "Projects"
       href: projects.html
-    - text: "Interactive Graphs"
-      href: website_dashboard.html
     - text: "LinkedIn"
       href: https://www.linkedin.com/in/adeline-shin-840324121/
     - icon: fa-envelope fa-lg
