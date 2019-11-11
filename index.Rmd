@@ -14,3 +14,9 @@ My name is Adeline Shin and I am a first year M.S. Biostatistics student at Colu
 I am interested in the intersection of Health Data Science, Biomedical Engineering, and Precision Medicine. I am a huge fan of personal health devices (like Fitbits) and how we can use data obtained from these devices to improve health outcomes on an individual level.
 
 You can check out some of my previous projects and work in the other tabs.
+<br>
+
+**Contact Information**  
+Adeline Shin  
+(858) 405-9664  
+adelineshin2015@gmail.com
