@@ -8,7 +8,13 @@ navbar:
     - text: "Resume"
       href: resume.html
     - text: "Projects"
-      href: projects.html
+      menu:
+      - text: "NYC Taxis on Valentine's Day"
+        href: nyctaxis.html
+      - text: "Medtronic Scoliosis Simulator"
+        href: medtronic.html
+      - text: "ChocLine Printer"
+        href: chocline.html
     - text: "LinkedIn"
       href: https://www.linkedin.com/in/adeline-shin-840324121/
     - icon: fa-envelope fa-lg
