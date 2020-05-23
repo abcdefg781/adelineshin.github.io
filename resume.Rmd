@@ -4,6 +4,78 @@ output:
   html_document:
     theme: cosmo
 ---
-A copy can be downloaded [here](./files/adeline_shin_resume.pdf)
+A PDF copy can be downloaded [here](./files/adeline_shin_resume.pdf).
 
-<img src="./files/adeline_shin_resume.jpg" alt="some text">
+## Education
+
+**Columbia Mailman School of Public Health**, New York, NY: 2019-2021 (Anticipated) <br>
+M.S. Candidate in Biostatistics, Theory and Methods Track <br>
+GPA: 3.34/4.00
+
+**Carnegie Mellon University**, Pittsburgh, PA: 2015-2019 <br>
+B.S. in Chemical Engineering with University Honors <br>
+Additional Major in Biomedical Engineering, Minor in Drama <br> 
+GPA: 3.52/4.00
+
+## Work Experience
+**New York City Department of Health and Mental Hygiene**: June-August 2018 <br>
+*HRTP Intern, Division of Informatics*
+
+* Cleaned National Provider Index (NPI) data warehouse of 50 million rows for widespread, transparent use within agency
+* Condensed NPI database to relevant data using exploratory data analysis to filter out repeated and unnecessary values
+* Independently learned SQL to program a stored procedure that updates the NPI database weekly
+
+**Eli Lilly and Company**, San Diego, CA <br>
+*Protein Purification Intern*: June-August 2017
+
+* Investigated new purification scheme nominated as one of Eli Lilly's Top 100 Innovations of 2017
+* Obtained results for 3 new protein structures as a result of prot-A and IMAC purification
+
+*Protein Crystallization Intern*: May-August 2016 <br>
+
+* Applied high-throughput crystallization of proteins to multiple projects, leading to discovery of 2 unique protein structures
+
+**University of Pittsburgh Medical Center**: September 2015-March 2016 <br>
+*Emergency Department Volunteer*
+
+* Aided patients and nurses in Emergency Department, making rounds and offering supplies to benefit patients
+
+## Projects
+[**COVID-19 Modeling and Visualization**](covid19.html) <br>
+
+* Coordinate-Wise Optimization
+* Creative Visualization with Stratification
+* K-Means and Gaussian Mixture Modeling Clustering
+
+[**Taxi Habits of New Yorkers on Valentine's Day**](nyctaxis.html) <br>
+
+* Data Display on Geographic Maps using Plotly
+* Shiny Dashboards
+* Rmd Website Creation
+
+[**Medtronic Scoliosis Simulator**](medtronic.Rmd) <br>
+
+* Engineering Prototyping
+* 3D-Printing and Manufacturing
+* Consumer Product Design
+
+[**ChocLine Printer**](chocline.html) <br>
+
+* Optimization of Fluid Dynamic Parameters
+* Engineering Design
+
+## Leadership
+**Society of Women Engineers (SWE)**: Mentoring Chair <br>
+
+* Connected over 90 mentors and mentees as CMU SWE's mentoring chair, growing the program by over 50%
+* Organized and hosted events related to personal and professional development
+
+**PhiDelt Buggy**: Head Driver <br>
+
+* Driver for annual buggy competition at CMU, where teams compete in a relay gravity race
+* Mentored new driver and assisted with mechanics
+
+## Skills
+**Programming**: R, GitHub, SQL, MATLAB, CAD, ASPEN Plus, Microsoft Office Suite, Python <br>
+**Technical**: 3D-Printing, Engineering Manufacturing and Prototyping, Laser Cutting, User Experience Design <br>
+**Languages**: English, Conversational Mandarin
