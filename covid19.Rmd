@@ -20,7 +20,7 @@ where $a$ is the maximum number of cases a region can reach, $b$ is the growth r
 To create the exponential model, we used a coordinate-wise optimization to minimize the loss function of the exponential equation and determine values of a, b, and c for every country. We then fit the model for every country and compared the model to the real data, as shown below for 4 select countries:
 
 <center>
-  <img src="./files/comparison_graph.jpg" height="400" width="auto">
+  <img src="./files/comparison_graph.jpg" height="500" width="auto">
 </center> <br>
 
 To get a sense of which countries had similarities in their trajectories, we also clustered the data using K-means clustering and Gaussian Mixture Model clustering. While the number of clusters for these are a bit arbitrary, we decided to use 4 clusters for K-means clustering, and 3 clusters for GMM. 3D plots of the clustering results are shown below.
