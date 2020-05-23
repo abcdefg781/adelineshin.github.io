@@ -12,7 +12,7 @@
 
 
 
-<title>NYC Taxi Trends on Valentine’s Day</title>
+<title>COVID-19 Modeling</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -337,24 +337,47 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">NYC Taxi Trends on Valentine’s Day</h1>
+<h1 class="title toc-ignore">COVID-19 Modeling</h1>
 
 </div>
 
 
-<p>In my Data Science I class at Columbia, I worked with a team on a final project that involved analyzing taxi data on Valentine’s Day in 2019. Our data for analysis included yellow cabs, green cabs, as well as rideshare services (Lyft, Uber), and it was found on the NYC Taxi and Limousine website.</p>
-<p>We thought that Valentine’s Day would be a particularly interesting day to analyze, since people are likely to have plans for a nice dinner or night out, and they are likely to use taxis rather than the subway. We wanted to use the data to see if we could observe any trends in terms of pickup or dropoff neighborhoods, congestion, and the busiest times of the day. Some sample visualizations can be found at the bottom of this page.</p>
-<p>These analyses were done with visualizations using ggplot, plotly for interactive graphs and maps, shiny extensions, and a website. The <a href="https://abcdefg781.github.io/ds_final_project/">website</a> also contains a video walkthrough and more about the background of this project.</p>
-<p>I was mainly involved with creating time distribution graphs and an interactive map of the different taxi zones. Below is an image of a time distribution graph, which shows all taxi rides within Manhattan throughout the day. As shown, there is a peak during dinner time, between 6-9 pm, which could possibly be from taxi pickups for Valentine’s Day dinner.</p>
+<p>During Spring 2020, my Advanced Topics in Statistical Computing class worked on a timely project to model and visualize coronavirus cases around the world. We took real data from the <a href="https://github.com/CSSEGISandData/COVID-19">Github repository</a> created by Johns Hopkins University to create an exponential model of cumulative cases, then visualize them based on similarities.</p>
+<p>Our goal was to come up with values for the parameters a, b, and c for the following equation that would provide an exponential fit of the coronavirus data for each country:</p>
+<p><span class="math display">\[
+f(t) = \frac{a}{1 + e^{-b(t-c)}}
+\]</span></p>
+<p>where <span class="math inline">\(a\)</span> is the maximum number of cases a region can reach, <span class="math inline">\(b\)</span> is the growth rate of the number of cases, and <span class="math inline">\(c\)</span> is the mid-point in time, where the curve changes from convex to concave.</p>
+<p>To create the exponential model, we used a coordinate-wise optimization to minimize the loss function of the exponential equation and determine values of a, b, and c for every country. We then fit the model for every country and compared the model to the real data, as shown below for 4 select countries:</p>
 <center>
-<img src="files/graph1.png" height="400" width="auto">
+<img src="files/comparison_graph.jpg" height="400" width="auto">
 </center>
 <p><br></p>
-<p>Another aspect of our project involved translating taxi zone codes to actual neighborhoods. The NYC TLC Data contained numerical zones for neighborhood, and those needed to be converted. In order to help visualize where each neighborhood is, I created an interactive map that contained each zone and its corresponding neighborhood name and borough. The interactive version can be found <a href="https://abcdefg781.github.io/ds_final_project/dashboard.html">here</a>, but a screenshot is provided below.</p>
+<p>To get a sense of which countries had similarities in their trajectories, we also clustered the data using K-means clustering and Gaussian Mixture Model clustering. While the number of clusters for these are a bit arbitrary, we decided to use 4 clusters for K-means clustering, and 3 clusters for GMM. 3D plots of the clustering results are shown below.</p>
 <center>
-<img src="files/graph2.png" height="400" width="auto">
+<div class"row">
+    <div class="column">
+    <img src="files/km4-3dplot.png" alt="K-Means Clustering">
+    <figcaption>K-Means Clustering with K = 4</figcaption>
+    </div>
+    <div class="column">
+    <img src="files/gmm3.png" alt="GMM Clustering">
+    <figcaption>GMM Clustering with 3 Clusters</figcaption>
+    </div>
+  </div>
 </center>
-<p><br></p>
+<p>The graphs below show the results of the clustering by stratifying the exponential models of each country based on their cluster. The graphs can be interpreted based on the average values for each cluster listed on the side of each stratification. For example, cluster 1 in the K-Means graph has an average “a” value of 80,635, an average “b” value of 0.09, and an average “c” value of 75.09 days. This means that cluster 1 has countries with a high predicted number of total cases, relatively slow growth, and a midpoint late in comparison to other countries.</p>
+<br>
+<center>
+<img src="files/kmeans_graph.jpg" alt="K-Means Clustering">
+<figcaption>
+Exponential Models with K-Means Clustering
+</figcaption>
+<br> <img src="files/gmm_graph.jpg" alt="GMM Clustering">
+<figcaption>
+Exponential Models with GMM Clustering
+</figcaption>
+</center>
 
 
 
