@@ -38,7 +38,7 @@ To get a sense of which countries had similarities in their trajectories, we als
   </div>
 </center>
 
-The graphs below show the results of the clustering by stratifying the exponential models of each country based on their cluster. The graphs can be interpreted based on the average values for each cluster listed on the side of each stratification. For example, cluster 1 in the K-Means graph has an average "a" value of 80,635, an average "b" value of 0.09, and an average "c" value of 75.09 days. This means that cluster 1 has countries with a high predicted number of total cases, relatively slow growth, and a midpoint late in comparison to other countries. 
+The graphs below show the results of the clustering by stratifying the exponential models of each country based on their cluster. The graphs can be interpreted based on the average values for each cluster listed on the side of each stratification.
 
 <br>
 <center>

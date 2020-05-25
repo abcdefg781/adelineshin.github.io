@@ -76,5 +76,5 @@ GPA: 3.52/4.00
 * Mentored new driver and assisted with mechanics
 
 ## Skills
-**Technical**: R, $\LaTeX$, GitHub, Website Creation, SQL, MATLAB, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br>
+**Technical**: **R**, **LaTeX**, GitHub, Website Creation, **Python**, **SQL**, **MATLAB**, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br>
 **Languages**: English, Conversational Mandarin
