@@ -1,8 +1,7 @@
 ---
 title: "Resume"
 output: 
-  html_document:
-    theme: cosmo
+  html_document
 ---
 A PDF copy can be downloaded [here](./files/adeline_shin_resume.pdf).
 

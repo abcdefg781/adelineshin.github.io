@@ -4,7 +4,6 @@ output:
   html_document:
     toc: false
     toc_float: false
-    theme: cosmo
 ---
 
 For my Chemical Engineering capstone design project, my teammates and I investigated fluid and thermodynamic properties of chocolate in order to improve upon 3D Printing of chocolate.

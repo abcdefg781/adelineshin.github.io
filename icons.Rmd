@@ -1,0 +1,45 @@
+---
+title: "Hex Stickers"
+author: "Adeline Shin"
+date: "5/24/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set
+library(tidyverse)
+library(hexSticker)
+library(showtext)
+```
+
+# Fonts
+```{r}
+font_add_google("Source Sans Pro", family = "Source Sans Pro")
+```
+
+
+# Name
+```{r}
+# sticker("./files/DSC_0082.JPG", package="Adeline Shin", p_size=5, p_color="white", p_family = "Source Sans Pro", p_x=1, p_y=0.5, h_color = "#5c8a6f", h_fill = "white", asp = 0.9, s_x = 0.4, s_y = 1, s_width = 2.2, filename="files/name_hex.png")
+```
+
+# DS Taxis
+```{r}
+sticker("./files/taxi_icon.png", package="NYC Taxi Analysis", p_size=5, p_color="black", p_family = "Source Sans Pro", s_x=1, s_y=.75, s_width=0.6,  h_color = "black", h_fill = "yellow", asp = 0.9, filename="files/taxi_hex.png")
+```
+
+# COVID-19
+```{r}
+sticker("./files/virus_icon.png", package="COVID-19 Model", p_size=5, p_color="red", p_family = "Source Sans Pro", s_x=1, s_y=0.75, s_width=0.6, h_color = "red", h_fill = "white", asp = 0.9, filename="files/covid_hex.png")
+```
+
+# BME Design
+```{r}
+sticker("./files/spine.png", package="Scoliosis Simulator", p_size=5, p_color="blue", p_family = "Source Sans Pro", s_x=1, s_y=0.7, s_width=0.4, h_color = "blue", h_fill = "#F6F7E4", asp = 0.9, filename="files/scoliosis_hex.png")
+```
+
+# Chocolate Printer
+```{r}
+sticker("./files/chocolate.png", package="ChocLine Printer", p_size=5, p_color="white", p_family = "Source Sans Pro",  s_x=1, s_y=0.75, s_width=0.4, h_color = "white", h_fill = "#5B1404", asp = 0.9, filename="files/chocline_hex.png")
+```
+

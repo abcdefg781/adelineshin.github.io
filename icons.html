@@ -10,9 +10,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Adeline Shin" />
 
 
-<title>COVID-19 Modeling</title>
+<title>Hex Stickers</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -337,47 +338,37 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">COVID-19 Modeling</h1>
+<h1 class="title toc-ignore">Hex Stickers</h1>
+<h4 class="author">Adeline Shin</h4>
+<h4 class="date">5/24/2020</h4>
 
 </div>
 
 
-<p>During Spring 2020, my Advanced Topics in Statistical Computing class worked on a timely project to model and visualize coronavirus cases around the world. We took real data from the <a href="https://github.com/CSSEGISandData/COVID-19">Github repository</a> created by Johns Hopkins University to create an exponential model of cumulative cases, then visualize them based on similarities.</p>
-<p>Our goal was to come up with values for the parameters a, b, and c for the following equation that would provide an exponential fit of the coronavirus data for each country:</p>
-<p><span class="math display">\[
-f(t) = \frac{a}{1 + e^{-b(t-c)}}
-\]</span></p>
-<p>where <span class="math inline">\(a\)</span> is the maximum number of cases a region can reach, <span class="math inline">\(b\)</span> is the growth rate of the number of cases, and <span class="math inline">\(c\)</span> is the mid-point in time, where the curve changes from convex to concave.</p>
-<p>To create the exponential model, we used a coordinate-wise optimization to minimize the loss function of the exponential equation and determine values of a, b, and c for every country. We then fit the model for every country and compared the model to the real data, as shown below for 4 select countries:</p>
-<center>
-<img src="files/comparison_graph.jpg" height="500" width="auto">
-</center>
-<p><br></p>
-<p>To get a sense of which countries had similarities in their trajectories, we also clustered the data using K-means clustering and Gaussian Mixture Model clustering. While the number of clusters for these are a bit arbitrary, we decided to use 4 clusters for K-means clustering, and 3 clusters for GMM. 3D plots of the clustering results are shown below.</p>
-<center>
-<div class"row">
-    <div class="column">
-    <img src="files/km4-3dplot.png" alt="K-Means Clustering">
-    <figcaption>K-Means Clustering with K = 4</figcaption>
-    </div>
-    <div class="column">
-    <img src="files/gmm3.png" alt="GMM Clustering">
-    <figcaption>GMM Clustering with 3 Clusters</figcaption>
-    </div>
-  </div>
-</center>
-<p>The graphs below show the results of the clustering by stratifying the exponential models of each country based on their cluster. The graphs can be interpreted based on the average values for each cluster listed on the side of each stratification.</p>
-<br>
-<center>
-<img src="files/kmeans_graph.jpg" alt="K-Means Clustering">
-<figcaption>
-Exponential Models with K-Means Clustering
-</figcaption>
-<br> <img src="files/gmm_graph.jpg" alt="GMM Clustering">
-<figcaption>
-Exponential Models with GMM Clustering
-</figcaption>
-</center>
+<div id="fonts" class="section level1">
+<h1>Fonts</h1>
+<pre class="r"><code>font_add_google(&quot;Source Sans Pro&quot;, family = &quot;Source Sans Pro&quot;)</code></pre>
+</div>
+<div id="name" class="section level1">
+<h1>Name</h1>
+<pre class="r"><code># sticker(&quot;./files/DSC_0082.JPG&quot;, package=&quot;Adeline Shin&quot;, p_size=5, p_color=&quot;white&quot;, p_family = &quot;Source Sans Pro&quot;, p_x=1, p_y=0.5, h_color = &quot;#5c8a6f&quot;, h_fill = &quot;white&quot;, asp = 0.9, s_x = 0.4, s_y = 1, s_width = 2.2, filename=&quot;files/name_hex.png&quot;)</code></pre>
+</div>
+<div id="ds-taxis" class="section level1">
+<h1>DS Taxis</h1>
+<pre class="r"><code>sticker(&quot;./files/taxi_icon.png&quot;, package=&quot;NYC Taxi Analysis&quot;, p_size=5, p_color=&quot;black&quot;, p_family = &quot;Source Sans Pro&quot;, s_x=1, s_y=.75, s_width=0.6,  h_color = &quot;black&quot;, h_fill = &quot;yellow&quot;, asp = 0.9, filename=&quot;files/taxi_hex.png&quot;)</code></pre>
+</div>
+<div id="covid-19" class="section level1">
+<h1>COVID-19</h1>
+<pre class="r"><code>sticker(&quot;./files/virus_icon.png&quot;, package=&quot;COVID-19 Model&quot;, p_size=5, p_color=&quot;red&quot;, p_family = &quot;Source Sans Pro&quot;, s_x=1, s_y=0.75, s_width=0.6, h_color = &quot;red&quot;, h_fill = &quot;white&quot;, asp = 0.9, filename=&quot;files/covid_hex.png&quot;)</code></pre>
+</div>
+<div id="bme-design" class="section level1">
+<h1>BME Design</h1>
+<pre class="r"><code>sticker(&quot;./files/spine.png&quot;, package=&quot;Scoliosis Simulator&quot;, p_size=5, p_color=&quot;blue&quot;, p_family = &quot;Source Sans Pro&quot;, s_x=1, s_y=0.7, s_width=0.4, h_color = &quot;blue&quot;, h_fill = &quot;#F6F7E4&quot;, asp = 0.9, filename=&quot;files/scoliosis_hex.png&quot;)</code></pre>
+</div>
+<div id="chocolate-printer" class="section level1">
+<h1>Chocolate Printer</h1>
+<pre class="r"><code>sticker(&quot;./files/chocolate.png&quot;, package=&quot;ChocLine Printer&quot;, p_size=5, p_color=&quot;white&quot;, p_family = &quot;Source Sans Pro&quot;,  s_x=1, s_y=0.75, s_width=0.4, h_color = &quot;white&quot;, h_fill = &quot;#5B1404&quot;, asp = 0.9, filename=&quot;files/chocline_hex.png&quot;)</code></pre>
+</div>
 
 
 

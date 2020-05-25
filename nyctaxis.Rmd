@@ -4,7 +4,6 @@ output:
   html_document:
     toc: false
     toc_float: false
-    theme: cosmo
 ---
 
 My final project for my Data Science class at Columbia involved analyzing taxi data on Valentine's Day in 2019. Our data was sourced from the [NYC Taxi and Limousine Commission](https://www1.nyc.gov/site/tlc/index.page) and included data on yellow and green cabs, Ubers, and Lyfts.
