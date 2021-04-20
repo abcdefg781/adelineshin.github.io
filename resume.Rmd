@@ -7,9 +7,9 @@ A PDF copy can be downloaded [here](./files/adeline_shin_resume.pdf).
 
 ## Education
 
-**Columbia Mailman School of Public Health**, New York, NY: 2019-2021 (Anticipated) <br>
+**Columbia Mailman School of Public Health**, New York, NY: 2019-2021 <br>
 M.S. Candidate in Biostatistics, Theory and Methods Track <br>
-GPA: 3.34/4.00
+GPA: 3.50/4.00
 
 **Carnegie Mellon University**, Pittsburgh, PA: 2015-2019 <br>
 B.S. in Chemical Engineering with University Honors <br>
@@ -17,6 +17,12 @@ Additional Major in Biomedical Engineering, Minor in Drama <br>
 GPA: 3.52/4.00
 
 ## Work Experience
+**Humana**: May 2020-Present <br>
+*Graduate Analytics Intern*
+
+* Provided insight on member participation and pilot study results for food insecurity programs for members facing social determinants of health
+* Designed lifetime value model to prioritize customer contact and expand Humana Pharmacy benefit to vulnerable populations
+
 **New York City Department of Health and Mental Hygiene**: June-August 2018 <br>
 *HRTP Intern, Division of Informatics*
 
@@ -40,6 +46,12 @@ GPA: 3.52/4.00
 * Aided patients and nurses in Emergency Department, making rounds and offering supplies to benefit patients
 
 ## Projects
+[**Formulae One**](fone.html) <br>
+
+* Predictvie Modeling of Formula One race results
+* Visualization of lap times and driver differences
+* Website building using Dash and Python, deployment with Heroku
+
 [**COVID-19 Modeling and Visualization**](covid19.html) <br>
 
 * Coordinate-Wise Optimization
@@ -68,11 +80,6 @@ GPA: 3.52/4.00
 
 * Connected over 90 mentors and mentees as CMU SWE's mentoring chair, growing the program by over 50%
 * Organized and hosted events related to personal and professional development
-
-**PhiDelt Buggy**: Head Driver <br>
-
-* Driver for annual buggy competition at CMU, where teams compete in a relay gravity race
-* Mentored new driver and assisted with mechanics
 
 ## Skills
 **Technical**: **R**, **LaTeX**, GitHub, Website Creation, **Python**, **SQL**, **MATLAB**, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br>
