@@ -7,12 +7,14 @@ navbar:
       href: index.html
     - text: "Resume"
       href: resume.html
-    - text: "Biostatistics"
+    - text: "Statistics"
       menu:
       - text: "COVID-19 Modeling"
         href: covid19.html
       - text: "NYC Taxis on Valentine's Day"
         href: nyctaxis.html
+      - text: "Formulae One"
+        href: fone.html
     - text: "Engineering"
       menu:
         - text: "Medtronic Scoliosis Simulator"
@@ -23,7 +25,7 @@ navbar:
       href: https://www.linkedin.com/in/adeline-shin-840324121/
     - icon: fa-envelope fa-lg
       href: mailto:<adelineshin2015@gmail.com>
-    - icon: fa-github fa-lgß
+    - icon: fa-github fa-lg
       href: http://github.com/abcdefg781/
 output:
   html_document:
