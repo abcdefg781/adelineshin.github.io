@@ -9,7 +9,7 @@ A PDF copy can be downloaded [here](./files/adeline_shin_resume.pdf).
 
 **Columbia Mailman School of Public Health**, New York, NY: 2019-2021 <br>
 M.S. Candidate in Biostatistics, Theory and Methods Track <br>
-GPA: 3.50/4.00
+GPA: 3.51/4.00
 
 **Carnegie Mellon University**, Pittsburgh, PA: 2015-2019 <br>
 B.S. in Chemical Engineering with University Honors <br>
@@ -17,11 +17,17 @@ Additional Major in Biomedical Engineering, Minor in Drama <br>
 GPA: 3.52/4.00
 
 ## Work Experience
-**Humana**: May 2020-Present <br>
-*Graduate Analytics Intern*
+**Humana**, Boston, MA <br>
+*Data Scientist 2*: June 2021-Present <br>
+
+* Managed analysis on projects related to social determinants of health with internal business partners and external vendors
+* Led project on Medicaid members and health related social needs using HEDIS quality measures
+
+*Graduate Analytics Intern*: May 2020-May 2021 <br>
 
 * Provided insight on member participation and pilot study results for food insecurity programs for members facing social determinants of health issues
 * Designed lifetime value model to prioritize customer contact and expand Humana Pharmacy benefit to vulnerable populations
+* Won inaugural Digital Health & Analytics (DH&A) Team Hackathon with a product for Humana members for the next pandemic
 
 **New York City Department of Health and Mental Hygiene**: June-August 2018 <br>
 *HRTP Intern, Division of Informatics*
@@ -48,7 +54,7 @@ GPA: 3.52/4.00
 ## Projects
 [**Formulae One**](fone.html) <br>
 
-* Predictvie Modeling of Formula One race results
+* Predictive Modeling of Formula One race results
 * Visualization of lap times and driver differences
 * Website building using Dash and Python, deployment with Heroku
 
@@ -82,5 +88,5 @@ GPA: 3.52/4.00
 * Organized and hosted events related to personal and professional development
 
 ## Skills
-**Technical**: **R**, **LaTeX**, GitHub, Website Creation, **Python**, **SQL**, **MATLAB**, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br>
+**Technical**: **Python**, **PySpark**, **R**, **SAS**, **LaTeX**, GitHub, Website Creation, **SQL**, **MATLAB**, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br>
 **Languages**: English, Conversational Mandarin
