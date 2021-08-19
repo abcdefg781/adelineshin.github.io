@@ -22,9 +22,7 @@ output:
 
 My name is Adeline Shin and I am currently a Data Scientist at Humana's office in Boston, MA. My work is centered around health-related social needs and how disparities such as food insecurity, financial strain, and other outside factors can influence a person's health status. I am passionate about striving towards health equity and finding creative solutions that can improve health outcomes for all, and not just the average individual.
 
-Prior to this, I completed my MS in Biostatistics at Columbia University's Mailman School of Public Health in the Theory and Methods track. I also received my BS in Biomedical and Chemical Engineering at Carnegie Mellon University, with a minor in drama. 
-
-I am passionate about finding creative solutions that can improve health outcomes for everyone, and not just the average individual. My interests lie at the intersection of Health Data Science, Biomedical Engineering, and Precision Medicine. Particularly, I am interested in how we can measure social determinants of health on an individual level and implement ways to help disadvantaged groups.
+Prior to this, I completed my MS in Biostatistics at Columbia University's Mailman School of Public Health in the Theory and Methods track. I also received my BS in Biomedical and Chemical Engineering at Carnegie Mellon University, with a minor in drama. My interests lie at the intersection of Health Data Science, Biomedical Engineering, and Precision Medicine. Particularly, I am interested in how we can measure social determinants of health on an individual level and implement ways to help disadvantaged groups.
 
 In my spare time, I enjoy rock climbing, reading, sailing, seeing theatre, and watching Formula One races. You can check out some of my previous projects and work in the other tabs.
 
