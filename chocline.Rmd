@@ -5,6 +5,17 @@ output:
     toc: false
     toc_float: false
 ---
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1G4CR6XYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1G4CR6XYK');
+</script>
+</head>
 
 For my Chemical Engineering capstone design project, my teammates and I investigated fluid and thermodynamic properties of chocolate in order to improve upon 3D Printing of chocolate.
 

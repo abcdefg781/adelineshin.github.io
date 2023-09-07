@@ -5,19 +5,19 @@ output:
     css: icons.css
 ---
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91329217-2"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1G4CR6XYK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-91329217-2');
+  gtag('config', 'G-Y1G4CR6XYK');
 </script>
 </head>
 
 <br> <center>
-<img src="./files/IMG_0006.jpg" style="border:5px solid" width="600" height="auto" alt="centered image">
+<img src="./files/IMG_3257.jpeg" style="border:5px solid" width="600" height="auto" alt="centered image">
 </center> <br>
 
 My name is Adeline Shin and I am currently a Data Scientist at Humana's office in Boston, MA. My work is centered around health-related social needs and how disparities such as food insecurity, financial strain, and other outside factors can influence a person's health status. I am passionate about striving towards health equity and finding creative solutions that can improve health outcomes for all, and not just the average individual.

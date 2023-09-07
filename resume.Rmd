@@ -3,6 +3,18 @@ title: "Resume"
 output: 
   html_document
 ---
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1G4CR6XYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1G4CR6XYK');
+</script>
+</head>
+
 A PDF copy can be downloaded [here](./files/adeline_shin_resume.pdf).
 
 ## Education
@@ -20,8 +32,9 @@ GPA: 3.52/4.00
 **Humana**, Boston, MA <br>
 *Data Scientist 2*: June 2021-Present <br>
 
-* Managed analysis on projects related to social determinants of health with internal business partners and external vendors
-* Led project on Medicaid members and health related social needs using HEDIS quality measures
+* Led study design and opportunity sizing of populations for new clinical programs to improve health and create enterprise value for over 200,000 members
+* Designed and analyzed outcomes of Social Needs pilots that have helped over 500,000 members with social needs such as food insecurity and loneliness; determined through survey results and claims data to determine whether pilot should be expanded or not
+* Led novel analysis measuring value of a digital product by matching member results with internal claims data, working with product managers and external vendors; Humana award recognition given for this analysis
 
 *Graduate Analytics Intern*: May 2020-May 2021 <br>
 

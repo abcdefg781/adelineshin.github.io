@@ -6,6 +6,17 @@ output:
     toc_float: false
     theme: cosmo
 ---
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1G4CR6XYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1G4CR6XYK');
+</script>
+</head>
 
 During Spring 2020, my Advanced Topics in Statistical Computing class worked on a timely project to model and visualize coronavirus cases around the world. We took real data from the [Github repository](https://github.com/CSSEGISandData/COVID-19) created by Johns Hopkins University to create an exponential model of cumulative cases, then visualize them based on similarities.
 
