@@ -17,37 +17,30 @@ output:
 
 A PDF copy can be downloaded [here](./files/adeline_shin_resume.pdf).
 
-## Education
+## Summary
+Senior data scientist with 5+ years of experience in healthcare analytics, with proven ability to drive multi-million dollar strategic decisions through robust experimental methods. Passionate about leveraging data and technology to improve healthcare outcomes for all.
 
-**Columbia Mailman School of Public Health**, New York, NY: 2019-2021 <br>
-M.S. Candidate in Biostatistics, Theory and Methods Track <br>
-GPA: 3.51/4.00
-
-**Carnegie Mellon University**, Pittsburgh, PA: 2015-2019 <br>
-B.S. in Chemical Engineering with University Honors <br>
-Additional Major in Biomedical Engineering, Minor in Drama <br> 
-GPA: 3.52/4.00
-
-## Work Experience
+## Professional Experience
 **Humana**, Boston, MA <br>
-*Data Scientist 2*: June 2021-Present <br>
+*Senior Data Scientist*: January 2024-Present <br>
 
-* Led study design and opportunity sizing of populations for new clinical programs to improve health and create enterprise value for over 200,000 members
-* Designed and analyzed outcomes of Social Needs pilots that have helped over 500,000 members with social needs such as food insecurity and loneliness; determined through survey results and claims data to determine whether pilot should be expanded or not
-* Led novel analysis measuring value of a digital product by matching member results with internal claims data, working with product managers and external vendors; Humana award recognition given for this analysis
+* Delivered analytics to launch programs that influenced up to $46M in medical cost savings through value-based care and chronic disease management.
+* Led development of analytic frameworks to evaluate vendors; collaborated with clinicians, business leaders, and actuaries to ensure integrity of models.
+* Automated analytics pipelines across departments, reducing manual work by up to 12 weeks and ensuring standardized enterprise reporting.
+
+*Data Scientist 2*: June 2021-Dec 2023 <br>
+
+* Received 2 Humana Star Awards for leadership in analysis using causal inference methods (RCT, DiD) and managing cross-functional relationships.
 
 *Graduate Analytics Intern*: May 2020-May 2021 <br>
 
-* Provided insight on member participation and pilot study results for food insecurity programs for members facing social determinants of health issues
 * Designed lifetime value model to prioritize customer contact and expand Humana Pharmacy benefit to vulnerable populations
-* Won inaugural Digital Health & Analytics (DH&A) Team Hackathon with a product for Humana members for the next pandemic
+* Won Digital Health & Analytics Hackathon with a pandemic product for Humana members.
 
 **New York City Department of Health and Mental Hygiene**: June-August 2018 <br>
 *HRTP Intern, Division of Informatics*
 
-* Cleaned National Provider Index (NPI) data warehouse of 50 million rows for widespread, transparent use within agency
-* Condensed NPI database to relevant data using exploratory data analysis to filter out repeated and unnecessary values
-* Independently learned SQL to program a stored procedure that updates the NPI database weekly
+* Analyzed and updated a 50M-row National Provider Index data warehouse to support public health initiatives across the agency.
 
 **Eli Lilly and Company**, San Diego, CA <br>
 *Protein Purification Intern*: June-August 2017
@@ -59,10 +52,15 @@ GPA: 3.52/4.00
 
 * Applied high-throughput crystallization of proteins to multiple projects, leading to discovery of 2 unique protein structures
 
-**University of Pittsburgh Medical Center**: September 2015-March 2016 <br>
-*Emergency Department Volunteer*
+## Education
 
-* Aided patients and nurses in Emergency Department, making rounds and offering supplies to benefit patients
+**Columbia Mailman School of Public Health**, New York, NY: 2019-2021 <br>
+M.S. Candidate in Biostatistics, Theory and Methods Track <br>
+
+**Carnegie Mellon University**, Pittsburgh, PA: 2015-2019 <br>
+B.S. in Chemical Engineering with University Honors <br>
+Additional Major in Biomedical Engineering, Minor in Drama <br> 
+
 
 ## Projects
 [**Formulae One**](fone.html) <br>
@@ -95,11 +93,18 @@ GPA: 3.52/4.00
 * Engineering Design
 
 ## Leadership
+**Appalachian Mountaineering Club**: <br>
+
+* Led over 10 gym nights and outdoor climbing events for historically marginized climbers. Spearheaded events that created BIPOC climber community under the AMC.
+
 **Society of Women Engineers (SWE)**: Mentoring Chair <br>
 
 * Connected over 90 mentors and mentees as CMU SWE's mentoring chair, growing the program by over 50%
 * Organized and hosted events related to personal and professional development
 
 ## Skills
-**Technical**: **Python**, **PySpark**, **R**, **SAS**, **LaTeX**, GitHub, Website Creation, **SQL**, **MATLAB**, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br>
-**Languages**: English, Conversational Mandarin
+* Programming & Tools: Python, R, SQL, SAS, PySpark, Databricks, Git, Power BI, Azure
+* Statistical Methods: Study Design, Hypothesis Testing, Outcomes Analysis, Causal Inference, Predictive Modeling
+* Healthcare Expertise: Claims analysis, Value-based care, Member health outcomes
+* Other: Project Management, Website Design, Data Storytelling
+

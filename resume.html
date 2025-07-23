@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -14,24 +13,38 @@
 
 <title>Resume</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -44,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -80,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -100,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -161,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -173,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,11 +144,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -199,13 +177,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -213,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,6 +205,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -284,7 +255,7 @@ $(document).ready(function () {
   <a href="resume.html">Resume</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Statistics
      
     <span class="caret"></span>
@@ -302,7 +273,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Engineering
      
     <span class="caret"></span>
@@ -336,7 +307,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -356,45 +327,73 @@ $(document).ready(function () {
   gtag('config', 'G-Y1G4CR6XYK');
 </script>
 </head>
-<p>A PDF copy can be downloaded <a href="./files/adeline_shin_resume.pdf">here</a>.</p>
-<div id="education" class="section level2">
-<h2>Education</h2>
-<p><strong>Columbia Mailman School of Public Health</strong>, New York, NY: 2019-2021 <br> M.S. Candidate in Biostatistics, Theory and Methods Track <br> GPA: 3.51/4.00</p>
-<p><strong>Carnegie Mellon University</strong>, Pittsburgh, PA: 2015-2019 <br> B.S. in Chemical Engineering with University Honors <br> Additional Major in Biomedical Engineering, Minor in Drama <br> GPA: 3.52/4.00</p>
+<p>A PDF copy can be downloaded <a
+href="./files/adeline_shin_resume.pdf">here</a>.</p>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>Senior data scientist with 5+ years of experience in healthcare
+analytics, with proven ability to drive multi-million dollar strategic
+decisions through robust experimental methods. Passionate about
+leveraging data and technology to improve healthcare outcomes for
+all.</p>
 </div>
-<div id="work-experience" class="section level2">
-<h2>Work Experience</h2>
-<p><strong>Humana</strong>, Boston, MA <br> <em>Data Scientist 2</em>: June 2021-Present <br></p>
+<div id="professional-experience" class="section level2">
+<h2>Professional Experience</h2>
+<p><strong>Humana</strong>, Boston, MA <br> <em>Senior Data
+Scientist</em>: January 2024-Present <br></p>
 <ul>
-<li>Led study design and opportunity sizing of populations for new clinical programs to improve health and create enterprise value for over 200,000 members</li>
-<li>Designed and analyzed outcomes of Social Needs pilots that have helped over 500,000 members with social needs such as food insecurity and loneliness; determined through survey results and claims data to determine whether pilot should be expanded or not</li>
-<li>Led novel analysis measuring value of a digital product by matching member results with internal claims data, working with product managers and external vendors; Humana award recognition given for this analysis</li>
+<li>Delivered analytics to launch programs that influenced up to $46M in
+medical cost savings through value-based care and chronic disease
+management.</li>
+<li>Led development of analytic frameworks to evaluate vendors;
+collaborated with clinicians, business leaders, and actuaries to ensure
+integrity of models.</li>
+<li>Automated analytics pipelines across departments, reducing manual
+work by up to 12 weeks and ensuring standardized enterprise
+reporting.</li>
+</ul>
+<p><em>Data Scientist 2</em>: June 2021-Dec 2023 <br></p>
+<ul>
+<li>Received 2 Humana Star Awards for leadership in analysis using
+causal inference methods (RCT, DiD) and managing cross-functional
+relationships.</li>
 </ul>
 <p><em>Graduate Analytics Intern</em>: May 2020-May 2021 <br></p>
 <ul>
-<li>Provided insight on member participation and pilot study results for food insecurity programs for members facing social determinants of health issues</li>
-<li>Designed lifetime value model to prioritize customer contact and expand Humana Pharmacy benefit to vulnerable populations</li>
-<li>Won inaugural Digital Health &amp; Analytics (DH&amp;A) Team Hackathon with a product for Humana members for the next pandemic</li>
+<li>Designed lifetime value model to prioritize customer contact and
+expand Humana Pharmacy benefit to vulnerable populations</li>
+<li>Won Digital Health &amp; Analytics Hackathon with a pandemic product
+for Humana members.</li>
 </ul>
-<p><strong>New York City Department of Health and Mental Hygiene</strong>: June-August 2018 <br> <em>HRTP Intern, Division of Informatics</em></p>
+<p><strong>New York City Department of Health and Mental
+Hygiene</strong>: June-August 2018 <br> <em>HRTP Intern, Division of
+Informatics</em></p>
 <ul>
-<li>Cleaned National Provider Index (NPI) data warehouse of 50 million rows for widespread, transparent use within agency</li>
-<li>Condensed NPI database to relevant data using exploratory data analysis to filter out repeated and unnecessary values</li>
-<li>Independently learned SQL to program a stored procedure that updates the NPI database weekly</li>
+<li>Analyzed and updated a 50M-row National Provider Index data
+warehouse to support public health initiatives across the agency.</li>
 </ul>
-<p><strong>Eli Lilly and Company</strong>, San Diego, CA <br> <em>Protein Purification Intern</em>: June-August 2017</p>
+<p><strong>Eli Lilly and Company</strong>, San Diego, CA <br>
+<em>Protein Purification Intern</em>: June-August 2017</p>
 <ul>
-<li>Investigated new purification scheme nominated as one of Eli Lilly’s Top 100 Innovations of 2017</li>
-<li>Obtained results for 3 new protein structures as a result of prot-A and IMAC purification</li>
+<li>Investigated new purification scheme nominated as one of Eli Lilly’s
+Top 100 Innovations of 2017</li>
+<li>Obtained results for 3 new protein structures as a result of prot-A
+and IMAC purification</li>
 </ul>
 <p><em>Protein Crystallization Intern</em>: May-August 2016 <br></p>
 <ul>
-<li>Applied high-throughput crystallization of proteins to multiple projects, leading to discovery of 2 unique protein structures</li>
+<li>Applied high-throughput crystallization of proteins to multiple
+projects, leading to discovery of 2 unique protein structures</li>
 </ul>
-<p><strong>University of Pittsburgh Medical Center</strong>: September 2015-March 2016 <br> <em>Emergency Department Volunteer</em></p>
-<ul>
-<li>Aided patients and nurses in Emergency Department, making rounds and offering supplies to benefit patients</li>
-</ul>
+</div>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<p><strong>Columbia Mailman School of Public Health</strong>, New York,
+NY: 2019-2021 <br> M.S. Candidate in Biostatistics, Theory and Methods
+Track <br></p>
+<p><strong>Carnegie Mellon University</strong>, Pittsburgh, PA:
+2015-2019 <br> B.S. in Chemical Engineering with University Honors <br>
+Additional Major in Biomedical Engineering, Minor in Drama <br></p>
 </div>
 <div id="projects" class="section level2">
 <h2>Projects</h2>
@@ -404,25 +403,29 @@ $(document).ready(function () {
 <li>Visualization of lap times and driver differences</li>
 <li>Website building using Dash and Python, deployment with Heroku</li>
 </ul>
-<p><a href="covid19.html"><strong>COVID-19 Modeling and Visualization</strong></a> <br></p>
+<p><a href="covid19.html"><strong>COVID-19 Modeling and
+Visualization</strong></a> <br></p>
 <ul>
 <li>Coordinate-Wise Optimization</li>
 <li>Creative Visualization with Stratification</li>
 <li>K-Means and Gaussian Mixture Modeling Clustering</li>
 </ul>
-<p><a href="nyctaxis.html"><strong>Taxi Habits of New Yorkers on Valentine’s Day</strong></a> <br></p>
+<p><a href="nyctaxis.html"><strong>Taxi Habits of New Yorkers on
+Valentine’s Day</strong></a> <br></p>
 <ul>
 <li>Data Display on Geographic Maps using Plotly</li>
 <li>Shiny Dashboards</li>
 <li>Rmd Website Creation</li>
 </ul>
-<p><a href="medtronic.Rmd"><strong>Medtronic Scoliosis Simulator</strong></a> <br></p>
+<p><a href="medtronic.Rmd"><strong>Medtronic Scoliosis
+Simulator</strong></a> <br></p>
 <ul>
 <li>Engineering Prototyping</li>
 <li>3D-Printing and Manufacturing</li>
 <li>Consumer Product Design</li>
 </ul>
-<p><a href="chocline.html"><strong>ChocLine Printer</strong></a> <br></p>
+<p><a href="chocline.html"><strong>ChocLine Printer</strong></a>
+<br></p>
 <ul>
 <li>Optimization of Fluid Dynamic Parameters</li>
 <li>Engineering Design</li>
@@ -430,15 +433,32 @@ $(document).ready(function () {
 </div>
 <div id="leadership" class="section level2">
 <h2>Leadership</h2>
-<p><strong>Society of Women Engineers (SWE)</strong>: Mentoring Chair <br></p>
+<p><strong>Appalachian Mountaineering Club</strong>: <br></p>
 <ul>
-<li>Connected over 90 mentors and mentees as CMU SWE’s mentoring chair, growing the program by over 50%</li>
-<li>Organized and hosted events related to personal and professional development</li>
+<li>Led over 10 gym nights and outdoor climbing events for historically
+marginized climbers. Spearheaded events that created BIPOC climber
+community under the AMC.</li>
+</ul>
+<p><strong>Society of Women Engineers (SWE)</strong>: Mentoring Chair
+<br></p>
+<ul>
+<li>Connected over 90 mentors and mentees as CMU SWE’s mentoring chair,
+growing the program by over 50%</li>
+<li>Organized and hosted events related to personal and professional
+development</li>
 </ul>
 </div>
 <div id="skills" class="section level2">
 <h2>Skills</h2>
-<p><strong>Technical</strong>: <strong>Python</strong>, <strong>PySpark</strong>, <strong>R</strong>, <strong>SAS</strong>, <strong>LaTeX</strong>, GitHub, Website Creation, <strong>SQL</strong>, <strong>MATLAB</strong>, Microsoft Office Suite, ASPEN, CAD, 3D-Printing, Laser Cutting, Prototyping, Consumer Product Design <br> <strong>Languages</strong>: English, Conversational Mandarin</p>
+<ul>
+<li>Programming &amp; Tools: Python, R, SQL, SAS, PySpark, Databricks,
+Git, Power BI, Azure</li>
+<li>Statistical Methods: Study Design, Hypothesis Testing, Outcomes
+Analysis, Causal Inference, Predictive Modeling</li>
+<li>Healthcare Expertise: Claims analysis, Value-based care, Member
+health outcomes</li>
+<li>Other: Project Management, Website Design, Data Storytelling</li>
+</ul>
 </div>
 
 
@@ -450,7 +470,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -468,7 +488,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
